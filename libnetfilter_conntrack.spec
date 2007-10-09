@@ -10,7 +10,7 @@ interface (API) to the in-kernel connection tracking state table.
 %define lib_name_orig   %mklibname %{lib_rname}
 %define lib_name        %{lib_name_orig}%{lib_major}
 
-Summary: Interface to the in-kernel connection tracking state table.
+Summary: Interface to the in-kernel connection tracking state table
 Name: %{name}
 Version: %{version}
 Release: %{release}
