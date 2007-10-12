@@ -1,7 +1,7 @@
 %define lib_rname netfilter_conntrack
 %define name lib%{lib_rname}
-%define version 0.0.31
-%define release %mkrel 2
+%define version 0.0.81
+%define release %mkrel 1
 
 %define common_description libnetfilter_conntrack is a userspace library providing a programming \
 interface (API) to the in-kernel connection tracking state table.
@@ -91,8 +91,8 @@ rm -rf %{buildroot}
 %{_libdir}/%{name}.a
 %{_libdir}/%{name}.la
 
-%files -n %{name}-utils
-%defattr(-,root,root)
-%{_bindir}/ctnl_test
+#%files -n %{name}-utils
+#%defattr(-,root,root)
+#%{_bindir}/*
 
 
