@@ -18,6 +18,7 @@ Source0: http://www.netfilter.org/projects/%{name}/files/%{name}-%{version}.tar.
 License: GPL
 Group: System/Kernel and hardware
 Url: http://www.netfilter.org/projects/%{name}/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libnfnetlink-devel
 
 %description
