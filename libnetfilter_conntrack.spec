@@ -1,6 +1,6 @@
 %define lib_rname netfilter_conntrack
 %define name lib%{lib_rname}
-%define version 0.0.81
+%define version 0.0.82
 %define release %mkrel 1
 
 %define common_description libnetfilter_conntrack is a userspace library providing a programming \
