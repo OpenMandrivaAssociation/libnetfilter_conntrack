@@ -10,7 +10,7 @@ License:	GPLv2+
 Group:		System/Kernel and hardware
 Url:		http://www.netfilter.org/projects/%{name}/
 Source0:	http://www.netfilter.org/projects/%{name}/files/%{name}-%{version}.tar.bz2
-BuildRequires:	libnfnetlink-devel
+BuildRequires:	nfnetlink-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
