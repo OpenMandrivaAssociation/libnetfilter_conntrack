@@ -31,6 +31,7 @@ Summary:        Development files for %{name}
 Group:          System/Libraries
 Requires:       %{libname} = %{version}-%{release}
 Provides:       %{name}-devel = %{version}-%{release}
+Obsoletes:	%{mklibname -d netfilter_conntrack 1}
 
 %description -n %{develname}
 This package contains the development files for %{name}.
