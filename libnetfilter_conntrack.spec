@@ -1,7 +1,6 @@
 %define major 1
 %define libname %mklibname netfilter_conntrack %{major}
 %define develname %mklibname netfilter_conntrack -d
-%define Werror_cflags %nil
 
 Summary:	Interface to the in-kernel connection tracking state table
 Name:		libnetfilter_conntrack
@@ -11,6 +10,7 @@ License:	GPLv2+
 Group:		System/Kernel and hardware
 Url:		http://www.netfilter.org/projects/%{name}/
 Source0:	http://www.netfilter.org/projects/%{name}/files/%{name}-%{version}.tar.bz2
+Patch0:     libnetfilter_conntrack-fix-string-error.patch
 BuildRequires:	nfnetlink-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -39,7 +39,7 @@ This package contains the development files for %{name}.
 
 %prep
 %setup -q
-
+%patch0 -p1
 %build
 %configure2_5x
 %make
