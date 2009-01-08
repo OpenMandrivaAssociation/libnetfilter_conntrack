@@ -1,10 +1,11 @@
 %define major 1
 %define libname %mklibname netfilter_conntrack %{major}
 %define develname %mklibname netfilter_conntrack -d
+%define Werror_cflags %nil
 
 Summary:	Interface to the in-kernel connection tracking state table
 Name:		libnetfilter_conntrack
-Version:	0.0.98
+Version:	0.0.99
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		System/Kernel and hardware
