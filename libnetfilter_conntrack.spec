@@ -10,7 +10,6 @@ License:	GPLv2+
 Group:		System/Kernel and hardware
 Url:		http://www.netfilter.org/projects/%{name}/
 Source0:	http://www.netfilter.org/projects/%{name}/files/%{name}-%{version}.tar.bz2
-Patch0:		libnetfilter_conntrack-fix-string-error.patch
 BuildRequires:	nfnetlink-devel >= 1.0.0
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
