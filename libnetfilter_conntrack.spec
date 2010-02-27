@@ -1,4 +1,4 @@
-%define major 1
+%define major 3
 %define libname %mklibname netfilter_conntrack %{major}
 %define develname %mklibname netfilter_conntrack -d
 
@@ -21,6 +21,7 @@ interface (API) to the in-kernel connection tracking state table.
 Summary:	Main library for %{name}
 Group:		System/Libraries
 Provides:	%{name} = %{version}-%{release}
+Obsoletes:	%{mklibname netfilter_conntrack 1} < 0.0.101
 
 %description -n %{libname}
 This package contains the library needed to run programs dynamically
