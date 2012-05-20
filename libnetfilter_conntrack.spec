@@ -4,12 +4,13 @@
 
 Summary:	Interface to the in-kernel connection tracking state table
 Name:		libnetfilter_conntrack
-Version:	1.0.0
-Release:	3
+Version:	1.0.1
+Release:	1
 License:	GPLv2+
 Group:		System/Kernel and hardware
-Url:		http://www.netfilter.org/projects/%{name}/
+URL:		http://www.netfilter.org/projects/%{name}/
 Source0:	http://www.netfilter.org/projects/%{name}/files/%{name}-%{version}.tar.bz2
+Source1:	http://www.netfilter.org/projects/%{name}/files/%{name}-%{version}.tar.bz2.sig
 BuildRequires:	nfnetlink-devel >= 1.0.0
 
 %description
