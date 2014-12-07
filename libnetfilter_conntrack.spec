@@ -5,7 +5,7 @@
 Summary:	Interface to the in-kernel connection tracking state table
 Name:		libnetfilter_conntrack
 Version:	1.0.2
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		System/Kernel and hardware
 Url:		http://www.netfilter.org/projects/%{name}/
