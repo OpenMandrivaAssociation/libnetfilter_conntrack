@@ -41,6 +41,7 @@ This package contains the development files for %{name}.
 %setup -q
 
 %build
+export CC=gcc
 %configure2_5x
 %make
 
