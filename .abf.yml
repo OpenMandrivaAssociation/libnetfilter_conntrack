@@ -1,5 +1,7 @@
 removed_sources:
   libnetfilter_conntrack-1.0.1.tar.bz2: 82ff80fc48d3f12b6c5bd66d207e95dfab152025
-sources:
   libnetfilter_conntrack-1.0.2.tar.bz2: e78d98b25b59bfd79ad2a2067798dae15ca3b608
   libnetfilter_conntrack-1.0.2.tar.bz2.sig: 47fabaece6a6e9aae5b12c16395597e84ce4d58b
+sources:
+  libnetfilter_conntrack-1.0.4.tar.bz2: 34fae1a30cbd51d46945e9f35790118c3462b0c6
+  libnetfilter_conntrack-1.0.4.tar.bz2.sig: 6a13288349d60b43cf76732d015ba60cca9613ac
