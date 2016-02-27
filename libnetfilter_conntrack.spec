@@ -1,3 +1,4 @@
+%define debug_package %nil
 %define major	3
 %define libname	%mklibname netfilter_conntrack %{major}
 %define devname	%mklibname netfilter_conntrack -d
