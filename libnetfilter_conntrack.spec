@@ -5,7 +5,7 @@
 
 Summary:	Interface to the in-kernel connection tracking state table
 Name:		libnetfilter_conntrack
-Version:	1.0.5
+Version:	1.0.6
 Release:	1
 License:	GPLv2+
 Group:		System/Kernel and hardware
@@ -42,8 +42,7 @@ This package contains the development files for %{name}.
 %setup -q
 
 %build
-export CC=gcc
-%configure2_5x
+%configure
 %make
 
 %install
