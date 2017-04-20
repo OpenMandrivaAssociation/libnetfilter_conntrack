@@ -42,6 +42,11 @@ This package contains the development files for %{name}.
 %setup -q
 
 %build
+%ifarch %armx
+mkdir -p bfd
+ln -s %{_bindir}/ld.bfd bfd/ld
+export PATH=$PWD/bfd:$PATH
+%endif
 %configure
 %make
 
