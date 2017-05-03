@@ -42,13 +42,10 @@ This package contains the development files for %{name}.
 %setup -q
 
 %build
-%ifarch %armx
-mkdir -p bfd
-ln -s %{_bindir}/ld.bfd bfd/ld
-export PATH=$PWD/bfd:$PATH
-%endif
+# macro not ready yet
+#% setup_linker_bfd
 %configure
-%make
+%make LD="%{_bindir}/ld.bfd" LDFLAGS="%{ldflags} -fuse-ld=bfd"
 
 %install
 %makeinstall_std
