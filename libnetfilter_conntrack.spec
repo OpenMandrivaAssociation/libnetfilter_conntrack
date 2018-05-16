@@ -44,8 +44,10 @@ This package contains the development files for %{name}.
 %build
 # macro not ready yet
 #% setup_linker_bfd
+
 %configure
-%make LD="%{_bindir}/ld.bfd" LDFLAGS="%{ldflags} -fuse-ld=bfd"
+%make
+# LD="%{_bindir}/ld.bfd" LDFLAGS="%{ldflags} -fuse-ld=bfd"
 
 %install
 %makeinstall_std
