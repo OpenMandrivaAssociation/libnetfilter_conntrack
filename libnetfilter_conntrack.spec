@@ -1,3 +1,9 @@
+%ifarch %{arm}
+# Workaround for compile error (ld crash) on armv7hl
+# clang 7.0-331886, binutils 2.30
+%global _disable_lto 1
+%endif
+
 %define debug_package %nil
 %define major	3
 %define libname	%mklibname netfilter_conntrack %{major}
@@ -44,7 +50,6 @@ This package contains the development files for %{name}.
 %build
 # macro not ready yet
 #% setup_linker_bfd
-
 %configure
 %make
 # LD="%{_bindir}/ld.bfd" LDFLAGS="%{ldflags} -fuse-ld=bfd"
