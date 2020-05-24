@@ -32,6 +32,7 @@ BuildRequires:	nfnetlink-devel >= 1.0.0
 BuildRequires:	pkgconfig(libmnl)
 %if %{with compat32}
 BuildRequires:	devel(libmnl)
+BuildRequires:	devel(libnfnetlink)
 %endif
 
 %description
